@@ -1,0 +1,13 @@
+[package]
+name = "zenoh-test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ctrlc = "3.4.4"
+image = "0.25.1"
+tokio = "1.38.0"
+zenoh = { git = "https://github.com/eclipse-zenoh/zenoh", branch = "dev/1.0.0", features = [
+    "shared-memory",
+    "unstable",
+] }
